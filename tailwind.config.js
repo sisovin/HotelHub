@@ -51,6 +51,13 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Luxury theme colors
+        'luxury-gold': '#D4AF37',
+        'luxury-navy': '#1A2238',
+      },
+      fontFamily: {
+        heading: ['"Playfair Display"', 'serif'],
+        body: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,0 +1,66 @@
+import React from "react";
+
+const mockHotels = [
+    {
+        id: 1,
+        name: "The Grand Royale",
+        image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+        featured: true,
+        rating: 5,
+        price: 520,
+        amenities: ["Free WiFi", "Pool", "Spa", "Bar"],
+        status: "active",
+    },
+    {
+        id: 2,
+        name: "Navy Palace Suites",
+        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80",
+        featured: false,
+        rating: 4,
+        price: 340,
+        amenities: ["Free WiFi", "Gym", "Restaurant"],
+        status: "featured",
+    },
+    {
+        id: 3,
+        name: "Gold Leaf Resort",
+        image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80",
+        featured: true,
+        rating: 5,
+        price: 610,
+        amenities: ["Free WiFi", "Spa", "Bar", "Golf"],
+        status: "active",
+    },
+    {
+        id: 4,
+        name: "Azure Luxury Inn",
+        image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80",
+        featured: false,
+        rating: 4,
+        price: 280,
+        amenities: ["Free WiFi", "Pool", "Restaurant"],
+        status: "inactive",
+    },
+    {
+        id: 5,
+        name: "Imperial Heights",
+        image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80",
+        featured: false,
+        rating: 3,
+        price: 190,
+        amenities: ["Free WiFi", "Gym"],
+        status: "pending",
+    },
+    {
+        id: 6,
+        name: "Sapphire Crown Hotel",
+        image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
+        featured: true,
+        rating: 5,
+        price: 700,
+        amenities: ["Free WiFi", "Spa", "Bar", "Golf", "Pool"],
+        status: "featured",
+    },
+];
+
+export default mockHotels;
