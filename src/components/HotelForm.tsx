@@ -48,7 +48,7 @@ const HotelForm = ({
     hotel_status: "Active" as const,
     amenities: [],
   },
-  onSubmit = () => {},
+  onSubmit = () => { },
   isEditing = false,
 }: HotelFormProps) => {
   const {
@@ -201,7 +201,7 @@ const HotelForm = ({
               <Label>Star Rating</Label>
               <div className="flex items-center space-x-1">
                 {[1, 2, 3, 4, 5].map((rating) => (
-                  <button
+                  <Button
                     key={rating}
                     type="button"
                     onClick={() => handleStarClick(rating)}
@@ -210,7 +210,7 @@ const HotelForm = ({
                     <Star
                       className={`w-6 h-6 ${rating <= stars ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
                     />
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>
@@ -266,6 +266,8 @@ const HotelForm = ({
                     type="button"
                     className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1"
                     onClick={() => setThumbnailPreview("")}
+                    aria-label="Remove thumbnail image"
+                    title="Remove thumbnail image"
                   >
                     <X className="w-4 h-4" />
                   </button>
@@ -312,6 +314,8 @@ const HotelForm = ({
                         type="button"
                         className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1"
                         onClick={() => removeImage(index)}
+                        aria-label={`Remove image ${index + 1}`}
+                        title={`Remove image ${index + 1}`}
                       >
                         <X className="w-3 h-3" />
                       </button>
@@ -356,6 +360,8 @@ const HotelForm = ({
                         type="button"
                         onClick={() => removeAmenity(index)}
                         className="ml-1 text-gray-500 hover:text-gray-700"
+                        aria-label={`Remove amenity ${amenity}`}
+                        title={`Remove amenity ${amenity}`}
                       >
                         <X className="w-3 h-3" />
                       </button>
